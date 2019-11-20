@@ -1,0 +1,11 @@
+$backgroundColor: #ffffff;
+$bodyColor: #000000;
+
+body {
+  background: $backgroundColor;
+  color: $bodyColor;
+  font-size: 1em;
+  line-height: 1.5em;
+  margin: 2em auto;
+  max-width: 35em;
+}
