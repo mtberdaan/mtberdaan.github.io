@@ -5,6 +5,19 @@ body {
 	max-width: 35em;
 }
 
+nav a {
+	display: inline-block;
+	text-align: center;
+	width: 32%;
+	color: black;
+}
+
+footer {
+	text-align: center;
+}
+
+
+
 .note {
 	font-style: italic;
 }
