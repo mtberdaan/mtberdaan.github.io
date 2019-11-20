@@ -1,7 +1,10 @@
 url: "https://www.daandenhoed.com" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "/" # the subpath of your site, e.g. /blog
 title: "Daan" # the name of your site, e.g. ACME Corp.
+description: personal web page - blog
 
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
+
+livereload: true
