@@ -1,0 +1,14 @@
+{
+	"version": 3,
+	"file": "main.css",
+	"sources": [
+		"main.scss",
+		"_sass/main.scss"
+	],
+	"sourcesContent": [
+		"@import \"main\";\n",
+		"$backgroundColor: #ffffff;\n$bodyColor: #000000;\n\nbody {\n  background: $backgroundColor;\n  color: $bodyColor;\n  font-size: 1em;\n  line-height: 1.5em;\n  margin: 2em auto;\n  max-width: 35em;\n}\n"
+	],
+	"names": [],
+	"mappings": "ACGA,AAAA,IAAI,CAAC,EACH,UAAU,EAJM,OAAO,EAKvB,KAAK,EAJK,OAAO,EAKjB,SAAS,EAAE,GAAG,EACd,WAAW,EAAE,KAAK,EAClB,MAAM,EAAE,QAAQ,EAChB,SAAS,EAAE,IAAI,GAChB"
+}
