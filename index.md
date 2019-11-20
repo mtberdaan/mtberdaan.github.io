@@ -1,8 +1,15 @@
 ---
 layout: default
-title: "Happy Jekylling!"
+title: "Home"
 ---
 
-## You're ready to go!
+# This is my web page.
+There's not much here right now, but maybe there will be soon.  
+_Who knows_...
 
-Start developing your Jekyll website.
+Cheers,  
+
+Daan  
+[@github](https://github.com/mtberdaan)  
+
+_Would you like me to make or break something?_ [Email me.](mailto:daandenhoed@gmail.com?subject=daanwebmail)  
