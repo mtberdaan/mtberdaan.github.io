@@ -1,0 +1,17 @@
+<nav>
+  <a href="/">home</a>
+  <div class="navright">
+    {% if page.previous.url %}
+      <a class="tooltip" href="{{ page.previous.url }}">
+        previous
+        <span class="tooltiptext">{{ page.previous.title }}
+      </a>
+    {% endif %}
+    {% if page.next.url %}
+      <a class="tooltip" href="{{page.next.url}}">
+        next
+        <span class="tooltiptext">{{ page.next.title }}
+      </a>
+    {% endif %}
+  </div>
+</nav>

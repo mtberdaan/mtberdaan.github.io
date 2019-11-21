@@ -1,11 +1,109 @@
 $backgroundColor: #ffffff;
-$bodyColor: #000000;
+$bodyColor: #37474f;
+$headingColor: #212121;
+$anchorColor: #212121;
+$anchorActiveColor: #37474f;
 
 body {
   background: $backgroundColor;
   color: $bodyColor;
   font-size: 1em;
   line-height: 1.5em;
-  margin: 2em auto;
+  margin: 3em auto;
   max-width: 35em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $headingColor;
+}
+
+a {
+  color: $anchorColor;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: all .2s ease-in-out;
+}
+
+a:active, a:focus, a:hover {
+  color: $anchorActiveColor;
+  border-bottom: 1px solid $anchorActiveColor;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  color: $anchorActiveColor;
+  font-size: .8em;
+  width: 50vw;
+  text-align: right;
+  /*
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  */
+  /* position tooltip */
+  position: absolute;
+  top: 30px;
+  right: 0%;
+  z-index: 1;
+
+  opacity: 0;
+  transition: opacity .3s;
+}
+
+.tooltip:hover .tooltiptext {
+  opacity: 1;
+}
+
+nav {
+  display: block;
+  position: relative;
+}
+.navright {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.whitespace {
+  margin: 3em auto;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+  margin: .5em auto;
+}
+
+.meta {
+  display: block;
+}
+.meta-date {
+  display: inline;
+}
+
+.meta-title {
+  display: inline;
+  margin: auto .2em;
+  text-decoration: none;
+}
+
+.meta-title {
+
+}
+
+footer {
+  margin: 4em auto;
+}
+
+.footertag {
+  font-weight: 200;
+  color: $bodyColor;
 }
