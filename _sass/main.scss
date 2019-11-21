@@ -1,11 +1,53 @@
 $backgroundColor: #ffffff;
-$bodyColor: #000000;
+$bodyColor: #37474f;
+$headingColor: #212121;
+$anchorColor: #212121;
 
 body {
   background: $backgroundColor;
   color: $bodyColor;
   font-size: 1em;
   line-height: 1.5em;
-  margin: 2em auto;
+  margin: 3em auto;
   max-width: 35em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $headingColor;
+}
+
+a {
+  color: $anchorColor;
+  font-weight:bolder;
+  text-decoration: none;
+  transition: color .1s ease-in-out;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+  margin: .5em auto;
+}
+
+.meta {
+  display: block;
+}
+.meta-date {
+  display: inline;
+}
+
+.meta-title {
+  display: inline;
+  margin: auto .2em;
+  text-decoration: none;
+}
+
+.meta-title {
+
+}
+
+footer {
+  margin: 4em auto;
 }

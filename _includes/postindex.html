@@ -1,0 +1,13 @@
+<!-- blog section -->
+<h2>Articles</h2>
+
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <div class="meta">
+        <p class="meta-date">{{ post.date | date: "%Y, %b %d" }}</p>
+        <p class="meta-title"><a href="{{ post.url }}">{{ post.title }}</a></p>
+      </div>
+    </li>
+  {% endfor %}
+</ul>
