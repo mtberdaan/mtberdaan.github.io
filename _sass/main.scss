@@ -13,8 +13,18 @@ body {
   max-width: 35em;
 }
 
+@media only screen and (max-width: 600px) {
+  body {
+    margin: 3em 2em;
+  }
+}
+
 h1, h2, h3, h4, h5, h6 {
   color: $headingColor;
+}
+
+#twitter-widget-0 {
+  width: 320px !important;
 }
 
 a {
