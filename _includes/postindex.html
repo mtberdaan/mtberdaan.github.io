@@ -1,16 +1,17 @@
 
-{% if site.blog == true %}
+{% if site.blog-active == true %}
 <!-- blog section -->
-<h2>Articles</h2>
+  <h2>Articles</h2>
+
+{% endif %}
 
 <ul>
   {% for post in site.posts %}
     <li>
       <div class="meta">
-        <p class="meta-date">{{ post.date | date: "%Y, %b %d" }}</p>
+        <p class="meta-date">{{ post.date | date: "%Y, %m %d" }}</p>
         <p class="meta-title"><a href="{{ post.url }}">{{ post.title }}</a></p>
       </div>
     </li>
   {% endfor %}
 </ul>
-{% endif %}
