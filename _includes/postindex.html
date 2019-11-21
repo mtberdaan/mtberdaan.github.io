@@ -1,7 +1,9 @@
 
-{% if site.blog == true %}
+{% if site.blog-active == true %}
 <!-- blog section -->
-<h2>Articles</h2>
+  <h2>Articles</h2>
+
+{% endif %}
 
 <ul>
   {% for post in site.posts %}
@@ -13,4 +15,3 @@
     </li>
   {% endfor %}
 </ul>
-{% endif %}
