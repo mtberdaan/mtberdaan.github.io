@@ -3,6 +3,7 @@
   <head>
     {% if jekyll.environment == "production" %}
       {% include analytics.html %}
+      {% include tagmanager.html %}
     {% endif %}
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
@@ -14,8 +15,12 @@
   </head>
 
   <body>
+    <!-- google tagmanager noscript -->
+    {% if jekyll.environment == "production" %}
+      {% include tagmanager-noscript.html %}
+    {% endif %}
     <!-- navigation section -->
-    
+
     <!-- content section -->
 
     {{ content }}
