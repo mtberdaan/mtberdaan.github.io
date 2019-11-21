@@ -2,6 +2,7 @@ $backgroundColor: #ffffff;
 $bodyColor: #37474f;
 $headingColor: #212121;
 $anchorColor: #212121;
+$anchorActiveColor: #37474f;
 
 body {
   background: $backgroundColor;
@@ -18,9 +19,15 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
   color: $anchorColor;
-  font-weight:bolder;
+  font-weight: bolder;
   text-decoration: none;
-  transition: color .1s ease-in-out;
+  border-bottom: 1px solid transparent;
+  transition: all .2s ease-in-out;
+}
+
+a:active, a:focus, a:hover {
+  color: $anchorActiveColor;
+  border-bottom: 1px solid $anchorActiveColor;
 }
 
 ul {
