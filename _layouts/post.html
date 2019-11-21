@@ -2,7 +2,15 @@
 layout: default
 ---
 
+{% include postnav.html %}
+
+<div class="whitespace"></div>
+
 <h1>{{ page.title }}</h1>
 <p>{{ page.date |  date: "%Y, %b %d"  }}</p>
 
 {{ content }}
+
+<div class="whitespace"></div>
+
+{% include postnav.html %}
