@@ -17,7 +17,7 @@ _Would you like to send me a message?_
 
 {% include whitespace.html %}
 
-{% include lasttweet.html %}
+<!-- {% include lasttweet.html %} -->
 
 {% if site.blog-active == true %}
   {% include whitespace.html %}
