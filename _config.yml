@@ -4,7 +4,7 @@ title: "Daan" # the name of your site, e.g. ACME Corp.
 description: personal web page - blog
 permalink: pretty
 
-blog-active: false
+blog-active: true
 show_drafts: false
 
 plugins:
