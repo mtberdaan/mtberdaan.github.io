@@ -3,17 +3,18 @@ layout: default
 title: Home
 ---
 
-# Hello, welcome to my web page.
+# Hi, welcome to my web page.
 
-There's not much here right now, but soon I will add more articles.  
-For now have a look at my cyber security resume.
+There's not much here right now, just a bunch of notes and thoughts.
 
-Kind regards,  
+But there is more to come.
+
+Cheers,  
 
 Daan    
 
 _Would you like to send me a message?_
-[Tweet](https://twitter.com/daandenhoed/) or [Email](mailto:daandenhoed@gmail.com?subject=daanwebmail:) me!
+[Email](mailto:daandenhoed@gmail.com?subject=daanwebmail:) me!
 
 {% include whitespace.html %}
 
