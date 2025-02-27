@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+    <head>
+        <title>Career</title>
+        <style>
+            body { 
+                line-height: 1.6;
+                font-size: 16px;
+                padding: 0 10px;
+                margin: 50px auto;
+                max-width: 650px;
+            }
+
+            #maincontent {
+                max-width: 42em;
+                margin: 15px auto;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="header">
+            <h1>Career</h1>
+        </div>
+        <div id="nav">
+            <a href="./index.html">Home</a>
+            <a href="./about.html">About</a>
+            <a href="./career.html">Career</a>
+            <a href="./blog.html">Blog</a>
+        </div>
+        <div id="maincontent">
+            <h2>Work Experience</h2>
+            <br>
+            <h3>SOC Team Lead</h3>
+            <p><strong>ON2IT Cybersecurity</strong> | March 2022 – Present (<span id="soc-lead-exp"></span>) | Zaltbommel, Netherlands</p>
+            <p>As a <strong>SOC (Security Operations Center) Team Lead</strong>, I manage and mentor a team of security engineers in a <strong>24/7 managed SOC environment</strong>.</p>
+            <br>
+            <h3>IT Security Engineer</h3>
+            <p><strong>ON2IT Cybersecurity</strong> | May 2020 – Present (<span id="it-sec-exp"></span>) | Zaltbommel, Netherlands</p>
+            <p>Alongside my role as a <strong>shift lead</strong>, I am responsible for various security engineering tasks.</p>
+            <br>
+            <h3>IT Security Enthusiast</h3>
+            <p><strong>Self-Education</strong> | May 2019 – Present (<span id="self-edu-exp"></span>)</p>
+            <p>I strongly believe in continuous learning, which is why I dedicate time to <strong>self-education</strong> in cybersecurity.</p>
+        </div>
+        <script>
+            function calculateExperience(startYear, startMonth) {
+                let startDate = new Date(startYear, startMonth - 1); // Month is zero-based
+                let currentDate = new Date();
+                
+                let years = currentDate.getFullYear() - startDate.getFullYear();
+                let months = currentDate.getMonth() - startDate.getMonth();
+                
+                if (months < 0) {
+                    years--;
+                    months += 12;
+                }
+
+                return years + " years, " + months + " months";
+            }
+
+            document.getElementById("soc-lead-exp").innerText = calculateExperience(2022, 3);
+            document.getElementById("it-sec-exp").innerText = calculateExperience(2020, 5);
+            document.getElementById("self-edu-exp").innerText = calculateExperience(2019, 5);
+        </script>
+    </body>
+</html>
